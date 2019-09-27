@@ -12,7 +12,7 @@
 </form>
 
 <p>{% trans "Forgot your password?" %} <a href="{% url 'password_reset' %}">{% trans "Reset it" %}</a>.</p>
-<p>{% trans "Not a member?" %} <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>.</p>
+<p>{% trans "Not a member?" %} <a href="/accounts/register">{% trans "Register" %}</a>.</p>
 {% endblock %}
 
 

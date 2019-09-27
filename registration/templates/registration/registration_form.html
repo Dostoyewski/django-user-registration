@@ -4,12 +4,10 @@
 {% block title %}{% trans "Register for an account" %}{% endblock %}
 
 {% block content %}
-<br>
-<form method="post" action="" >
+<form method="post" action="">
     {% csrf_token %}
     {{ form.as_p }}
-	<br>
-    <button class="btn waves-effect waves-light  purple darken-4" type="submit" >Зарегистрироваться</button>
+    <input type="submit" value="{% trans 'Submit' %}" />
 </form>
 {% endblock %}
 
